@@ -1,0 +1,111 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #2e3b4e;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background-color: #394b5f;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tooltip styling */
+.tooltip {
+    background-color: #3d5066;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+    color: #b0bccc;
+}
+
+/* Code snippet styling */
+.code-snippet {
+    background-color: #1e2a3b;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0 20px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    text-align: left;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.blank {
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    background-color: #2e3b4e;
+    border: 1px dashed #6a7d91;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+
+/* Options styling */
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.option {
+    background-color: #556b87;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #6a7d91;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
