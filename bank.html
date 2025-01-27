@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank Card Registration</title>
+    </head>
+    <body>
+        <h2>Bank Card Registration</h2>
+        <form action="/register">
+            <label for="cardholder">Cardholder Name:</label><br>
+            <input type="text" id="cardholder" name="cardholder" required><br>
+            <label for="cardnumber">Card Number:</label><br>
+            <input type="text" id="cardnumber" name="cardnumber" pattern="[0-9]{16}" required><br>
+            <label for="birth">Birth Date:</label><br>
+            <input type="month" id="birth" name="birth" required><br>
+            <label for="cvv">CVV:</label><br>
+            <input type="password" id="cvv" name="cvv" pattern="[0-9]{3}" required><br><br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+
+        <h3>Card Type</h3>
+        <form>
+            <input type="radio" id="debit" name="card_type" value="Debit">
+            <label for="debit">Debit</label><br>
+            <input type="radio" id="credit" name="card_type" value="Credit">
+            <label for="credit">Credit</label><br>
+        </form>
+
+        <h3>Additional Services</h3>
+        <form>
+            <input type="checkbox" id="online_banking" name="online_banking" value="Online Banking">
+            <label for="online_banking"> Enable Online Banking</label><br>
+            <input type="checkbox" id="mobile_alerts" name="mobile_alerts" value="Mobile Alerts">
+            <label for="mobile_alerts"> Receive Mobile Alerts</label><br>
+            <input type="checkbox" id="paperless" name="paperless" value="Paperless Statements">
+            <label for="paperless"> Go Paperless</label>
+        </form>
+
+        <h3>Contact Information</h3>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        </form>
+    </body>
+</html>
