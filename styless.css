@@ -1,73 +1,60 @@
 body {
+    background-color: #2c003e;
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 20px;
 }
 
-.container {
-    background: white;
-    padding: 20px;
-    max-width: 700px;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 22px;
+form {
+    background: #4b0082;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    width: 400px;
     text-align: center;
 }
 
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 label {
-    font-weight: bold;
     display: block;
-    margin-top: 15px;
+    margin: 10px 0 5px;
+    font-size: 14px;
 }
 
 input, select, textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: #fff;
+    color: #333;
 }
 
-textarea {
-    height: 80px;
-    resize: vertical;
-}
-
-.radio-group {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-}
-
-.radio-group label {
-    font-weight: normal;
-    margin-left: 5px;
-}
-
-.checkbox {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
+input:hover, select:hover, textarea:hover {
+    background: #e0d6eb;
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
+    background: #a020f0;
     color: white;
+    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-top: 20px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #9400d3;
 }
