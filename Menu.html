@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EatNow Cafe - Interactive Menu</title>
+<script>
+// Step 1: Personalized Greeting
+let person = prompt("Please enter your name", "Customer"); // "Customer" is the default name
+
+if (person != null) {
+  // If the user provides a name, display a personalized welcome message
+  document.getElementById("demo").innerHTML =
+    "Welcome to EatNow cafe, " + person + "!";
+  alert("Welcome to EatNow cafe, " + person + "!"); // Alert with personalized welcome message
+} else {
+  // If the user clicks "Cancel," display a default greeting
+  document.getElementById("demo").innerHTML =
+    "Welcome to EatNow cafe, Customer!";
+  alert("Welcome to EatNow cafe, Guest!"); // Alert with default greeting
+}
+
+// Step 3: Display Menu Items in an HTML Element
+
+// Create an array containing five unique menu items
+let menuItems = [
+  "Githeri"
+  "Mokimo"
+  "Ugali and Fish"
+  "Pilau"
+  "Biryani"
+];
+
+// Initialize an empty string to store the menu items
+let text = "";
+
+// Use the forEach() method to iterate over the menuItems array
+menuItems.forEach(myFunction);
+
+// Display the menu items in the HTML element with the ID "demo"
+document.getElementById("demo").innerHTML = text;
+
+// Define the myFunction function to format each menu item
+function myFunction(item, index) {
+  // Put each menu item in a numbered list format to the `text` variable
+   text += index + ": " + item + "<br>"; 
+}
+// Step 4: Adding a New Dish
+    // Ask the user to suggest a new dish
+    let newDish = prompt("Would you like to suggest a new dish for our menu?");
+
+    // Validate the input
+    if (newDish && newDish.trim() !== "") {
+      // If the input is valid, add the new dish to the menuItems array
+      menuItems.push(newDish.trim()); // Add the new dish to the array
+      alert("Thank you for your suggestion! Here's our updated menu:");
+    } else {
+      // If the input is invalid, display an appropriate message
+      alert("No dish was added. Please try again with a valid suggestion.");
+    }
+
+    // Clear the previous menu and display the updated menu
+    text = "";
+    menuItems.forEach(myFunction);
+    document.getElementById("demo").innerHTML += "<br><br>Updated Menu:<br>" + text;
+</script>
+</body>
+</html>
+});
