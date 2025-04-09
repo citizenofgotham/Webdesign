@@ -6,59 +6,50 @@
     <title>Exercise</title>
     <link rel="stylesheet" href="math.css">
 </head>
-<body>
+<body ="background-color: lightblue;">
     <header>
         <nav>
-             <a href="Lamps.html">About</a>
-             <a href="Painting.html">About</a>
-             <a href="forms.html">Forms</a>
+             <a href="Lamps.html">Images</a>
+             <a href="Painting.html">Form1</a>
+             <a href="forms.html">Country</a>
              <a href="bank.html">Bank</a>
-            <a href="WebForms.html">WebForms</a>
             <a href="button.html">JavaScript</a>
             <a href="head.html">HeadJS</a>
             <a href="body.html">BodyJS</a>
              <a href="external.html">ExternalJS</a>
             <a href="2external.html">2ExternalJS</a>
             <a href="variables.html">VariableJS</a>
-            <a href="Menu.html">EatCafeNow</a>
-             <a href="Gourment.html">EatCafeNow</a>
             <a href="car.html">Car Store</a>
             
             
         </nav>
     </header>
-    <div class="container">
-    <div class="main-photo">
-      <img id="mainImage" src="https://images.unsplash.com/photo-1494256997604-768d1f608cac" alt="Main Flower">
-    </div>
-    <div class="info">
-      <h1>Flowers</h1>
-      <p>Amsterdam, Netherlands</p>
-      <p>Photo by: <strong>Flora Bloom</strong></p>
-      <p>This blooming field is filled with vibrant tulips and showcases the breathtaking beauty of spring.</p>
-      <h3>Other images by Flora Bloom</h3>
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1524592916515-d477f6d95240" alt="Flower 1">
-        <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659" alt="Flower 2">
-        <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92" alt="Flower 3">
-        <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908" alt="Flower 4">
-      </div>
-    </div>
-  </div>
+       
+       <table>
+         <tr>
+            <td>
+                <img src="https://m.media-amazon.com/images/I/71Mq+izHeCL.jpg" width="300" height="200>
+            </td>
+            <td>
+                <h2>Chamelon lamp</h2>
+                  <p>One of a kind lamp. Only can be bought from our stores.</p>
+            <h3>Other lamps</h3>
+            <table>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/819DwiBiWKL.jpg" width="300" height="200"></td>
+                    <td><img src="https://brownandginger.com/cdn/shop/collections/Cockatoo_Light_4_1200x1200.jpg?v=1689347281"width="300" height="200"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://github.com/citizenofgotham/Webdesign/blob/main/Designer%20(60).jpeg?raw=true" width="300" height="200"></td>
+                    <td><img src="https://github.com/citizenofgotham/Webdesign/blob/main/Designer%20(60).jpeg?raw=true" width="300" height="200"></td> 
+                </tr>
+            </table>
+        </td>
+         </tr>
+       </table>
 
-  <script>
-    const thumbnails = document.querySelectorAll('.gallery img');
-    const mainImage = document.getElementById('mainImage');
-
-    thumbnails.forEach(img => {
-      img.addEventListener('click', () => {
-        mainImage.src = img.src;
-
-        thumbnails.forEach(t => t.classList.remove('highlight'));
-        img.classList.add('highlight');
-      });
-    });
-  </script>
-
-</body>
+        <footer>&copy;CitizenofGotham</footer>
+    </body>
+    <footer>&copy;CitizenofGotham</footer>
 </html>
+
